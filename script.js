@@ -26,6 +26,13 @@ const perguntas = [
         ]
     }
 ];
+let atual = 0;
+let perguntaAtual;
+function mostraPergunta (){
+    perguntaAtual = perguntas[atual]
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+mostraPergunta();
 const lapis = {
     tamanho: 20,
     tipo: 'HB',
